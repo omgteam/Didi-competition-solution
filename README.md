@@ -12,14 +12,18 @@ This repository is to provide visualization, calibration, detection ROS nodes.
 Follow instructions you find in this <a href="http://wiki.ros.org/ROS/Installation" target="_parent">page</a>.
 
 ### Download dataset:
-* Download the 32GB dataset from [here](http://academictorrents.com/details/76352487923a31d47a6029ddebf40d9265e770b5).
+* Download the 22GB dataset from [here](http://academictorrents.com/details/18d7f6be647eb6d581f5ff61819a11b9c21769c7).
 
 ### Setup:
 `$ git clone https://github.com/omgteam/Didi-competition-solution.git`
+
 `$ cd Didi-competition-solution`
+
 `$ catkin_make`
+
 `$ source devel/setup.bash`
 
 ### Visualization:
 `$ roslaunch didi_visualize visualize_rviz.launch rosbag_file:=PATH/NAME.bag`
+
 This module is borrowed from https://github.com/jokla/didi_challenge_ros.
