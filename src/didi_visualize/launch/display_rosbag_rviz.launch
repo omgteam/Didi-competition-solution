@@ -1,0 +1,11 @@
+<launch>
+
+<!-- Usage: roslaunch didi_visualize display_rosbag_rviz.launch rosbag_file:=/path/approach_1.bag  -->
+
+<arg name="rosbag_file" default="my_file_1" />
+
+<node pkg="rosbag" type="play" name="player" output="screen" args="-l $(arg rosbag_file) "/>
+
+<include file="$(find didi_visualize)/launch/display_rviz.launch"/>
+
+</launch>
