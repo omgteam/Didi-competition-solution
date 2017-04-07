@@ -25,8 +25,11 @@ Follow instructions you find in this <a href="http://wiki.ros.org/ROS/Installati
 
 ### Visualization:
 To visualize Dataset Release 2, we need to convert topic /velodyne_packets to /velodyne_points:
+
 First install ROS velodyne drivers in https://github.com/ros-drivers/velodyne.git, then:
+
 `$ roslaunch velodyne_pointcloud 32e_points.launch`
+
 `$ roslaunch didi_visualize display_rosbag_rviz.launch rosbag_file:=PATH/NAME.bag`
 
 This module is borrowed from https://github.com/jokla/didi_challenge_ros.
