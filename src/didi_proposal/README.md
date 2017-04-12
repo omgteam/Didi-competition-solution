@@ -11,9 +11,9 @@ Use radar point(p) to project into image plane(p'), and draw square that centers
 
 ![alt tag](./3D_2D.png)
   
-We need camera-radar calibration matrix (3*4), which specifies rotation and relative position of camera to radar, and transforms radar XYZ to camera XYZ.
+We need camera-radar calibration matrix (3 * 4), which specifies rotation and relative position of camera to radar, and transforms radar XYZ to camera XYZ.
 
-We need camera intrinsic matrix (3*3, 1*5), which transforms camera XYZ to plane XY. 
+We need camera intrinsic matrix (3 * 3, 1 * 5), which transforms camera XYZ to plane XY. 
 
 ## Image point to Image box
 
