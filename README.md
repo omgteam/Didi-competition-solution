@@ -2,8 +2,6 @@
 
 [Here](https://www.udacity.com/didi-challenge) you can find more info about the challenge. 
 
-![alt tag](https://www.youtube.com/watch?v=8ajTBb6EDWE)
-
 This repository is to provide visualization, calibration, detection ROS nodes.
 
 ## Instructions:
@@ -23,7 +21,7 @@ Follow instructions you find in this <a href="http://wiki.ros.org/ROS/Installati
 
 `$ source devel/setup.bash`
 
-### Visualization:
+### Visualization (Done)
 To visualize Dataset Release 2, we need to convert topic /velodyne_packets to /velodyne_points:
 
 First install ROS velodyne drivers in https://github.com/ros-drivers/velodyne.git, then:
@@ -34,7 +32,7 @@ First install ROS velodyne drivers in https://github.com/ros-drivers/velodyne.gi
 
 This module is borrowed from https://github.com/jokla/didi_challenge_ros.
 
-### Object detection
+### Object detection (Doing)
 To detect cars, we use lidar and radar sensor info to generate proposals, then project into 2D image and classify target type(car, pedestrian, cyclist, background) and regress to targets. This kind of solution can handle object detection within range of 170 meters.
 
 Proposal type: focus point (x,y,z); 3D proposal (x,y,z,w,l,h). 
