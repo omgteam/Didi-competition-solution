@@ -2,7 +2,7 @@
 
 [Here](https://www.udacity.com/didi-challenge) you can find more info about the challenge. 
 
-[![GIF](./visualization.gif)](https://www.youtube.com/watch?v=8ajTBb6EDWE)
+![alt tag](https://www.youtube.com/watch?v=8ajTBb6EDWE)
 
 This repository is to provide visualization, calibration, detection ROS nodes.
 
