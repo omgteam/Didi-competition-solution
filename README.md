@@ -33,3 +33,19 @@ First install ROS velodyne drivers in https://github.com/ros-drivers/velodyne.gi
 `$ roslaunch didi_visualize display_rosbag_rviz.launch rosbag_file:=PATH/NAME.bag`
 
 This module is borrowed from https://github.com/jokla/didi_challenge_ros.
+
+### Object detection
+To detect cars, we use lidar and radar sensor info to generate proposals, then project into 2D image and classify target type(car, pedestrian, cyclist, background) and regress to targets. This kind of solution can handle object detection within range of 170 meters.
+
+Proposal type: focus point (x,y,z); 3D proposal (x,y,z,w,l,h). 
+
+Projection function: 2D box with focus point at center (box's height and width is function of distance of focus point); Projection of 3D proposal (x,y,z,w,l,h).
+
+Classifier and Regressor: CNN classification and regressor.
+
+How to use history detection info to avoid redundant detection and boost detection accuracy. To avoid redundant detection, recognize stationary obstacles. To boost detection accuracy, we can use trajectory smooth techiniques presented in [1].
+
+
+[1] Jiang, Chunhui, et al. "A trajectory-based approach for object detection from video." Neural Networks (IJCNN), 2016 International Joint Conference on. IEEE, 2016.
+
+
