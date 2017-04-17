@@ -36,4 +36,6 @@ There is also another way to avoid waiting calibration file.
 
 Feed bird-view of lidar, radar image and camera image into CNN, and classy if there exists cars in camera, and regress to relative position with capture car at center. This method can only apply in one moving car situation.
 
+## Bag file to tensorflow records
 
+## Tensorflow CNN training and testing

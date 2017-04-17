@@ -43,15 +43,17 @@ Classifier and Regressor: CNN classification and regressor.
 
 How to use history detection info to avoid redundant detection and boost detection accuracy. To avoid redundant detection, recognize stationary obstacles. To boost detection accuracy, we can use trajectory smooth techiniques presented in [1].
 
-In src/didi_proposal, we try some simple algorithms:
+In src/didi_proposal, we try some algorithms:
 
 #### Alorithm 1
 
 Use radar points to do region proposal, then projects into image to classify. Calibration code is done, and waiting for calibration file to check correctness.
 
-### Algorithm 2
+#### Algorithm 2
 
 Feed bird-view of lidar, radar image and camera image into CNN, and classy if there exists cars in camera, and regress to relative position with capture car at center. This method can only apply in one moving car situation.
+
+## Reference 
 
 [1] Jiang, Chunhui, et al. "A trajectory-based approach for object detection from video." Neural Networks (IJCNN), 2016 International Joint Conference on. IEEE, 2016.
 
