@@ -45,7 +45,13 @@ How to use history detection info to avoid redundant detection and boost detecti
 
 In src/didi_proposal, we try some simple algorithms:
 
-1, Use radar points to do region proposal, then projects into image to classify. Calibration code is done, and waiting for calibration file to check correctness.
+#### Alorithm 1
+
+Use radar points to do region proposal, then projects into image to classify. Calibration code is done, and waiting for calibration file to check correctness.
+
+### Algorithm 2
+
+Feed bird-view of lidar, radar image and camera image into CNN, and classy if there exists cars in camera, and regress to relative position with capture car at center. This method can only apply in one moving car situation.
 
 [1] Jiang, Chunhui, et al. "A trajectory-based approach for object detection from video." Neural Networks (IJCNN), 2016 International Joint Conference on. IEEE, 2016.
 
